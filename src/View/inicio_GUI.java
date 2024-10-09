@@ -18,6 +18,8 @@ public class inicio_GUI extends javax.swing.JFrame {
      */
     public inicio_GUI() {
         initComponents();
+        res_txt.setVisible(false);
+        img_img.setVisible(false);
     }
 
     /**
@@ -40,6 +42,10 @@ public class inicio_GUI extends javax.swing.JFrame {
         vezes_txt = new javax.swing.JButton();
         div_txt = new javax.swing.JButton();
         sair_btn = new javax.swing.JButton();
+        img_img = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        res_txt = new javax.swing.JLabel();
 
         jLabel2.setText("jLabel2");
 
@@ -120,6 +126,25 @@ public class inicio_GUI extends javax.swing.JFrame {
         jPanel1.add(sair_btn);
         sair_btn.setBounds(360, 310, 50, 23);
 
+        img_img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagem/hapy.png"))); // NOI18N
+        jPanel1.add(img_img);
+        img_img.setBounds(30, 20, 50, 60);
+
+        jLabel4.setText("Resultado:");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(40, 180, 60, 20);
+
+        jButton1.setText("C");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(259, 310, 60, 23);
+        jPanel1.add(res_txt);
+        res_txt.setBounds(200, 170, 60, 50);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -163,6 +188,10 @@ public class inicio_GUI extends javax.swing.JFrame {
     System.exit(0);
     }//GEN-LAST:event_sair_btnActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    Controller.Atividade_DAO.limpar();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -200,12 +229,16 @@ public class inicio_GUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton div_txt;
+    public static javax.swing.JLabel img_img;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton mais_txt;
     private javax.swing.JButton menos_txt;
+    public static javax.swing.JLabel res_txt;
     private javax.swing.JButton sair_btn;
     public static javax.swing.JTextField val1_txt;
     public static javax.swing.JTextField val2_txt;
