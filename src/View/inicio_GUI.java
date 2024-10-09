@@ -46,7 +46,7 @@ public class inicio_GUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 153));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Calculadora muito maneira", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Verdana", 3, 11))); // NOI18N
         jPanel1.setLayout(null);
 
@@ -81,7 +81,7 @@ public class inicio_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(mais_txt);
-        mais_txt.setBounds(30, 240, 50, 23);
+        mais_txt.setBounds(30, 240, 60, 20);
 
         menos_txt.setText("--");
         menos_txt.addActionListener(new java.awt.event.ActionListener() {
@@ -90,7 +90,7 @@ public class inicio_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(menos_txt);
-        menos_txt.setBounds(120, 240, 50, 23);
+        menos_txt.setBounds(120, 240, 60, 23);
 
         vezes_txt.setText("x");
         vezes_txt.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +99,7 @@ public class inicio_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(vezes_txt);
-        vezes_txt.setBounds(210, 240, 60, 23);
+        vezes_txt.setBounds(220, 240, 60, 23);
 
         div_txt.setText("/");
         div_txt.addActionListener(new java.awt.event.ActionListener() {
@@ -108,7 +108,7 @@ public class inicio_GUI extends javax.swing.JFrame {
             }
         });
         jPanel1.add(div_txt);
-        div_txt.setBounds(320, 240, 60, 23);
+        div_txt.setBounds(330, 240, 60, 23);
 
         sair_btn.setForeground(new java.awt.Color(255, 0, 0));
         sair_btn.setText("X");
